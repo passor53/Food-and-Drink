@@ -1,0 +1,15 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.icone{
+    width: 8vw;
+}
+
+@media( min-width: 990px){
+
+    .navbar-collapse{
+        flex-grow: 0;
+    }
+}
