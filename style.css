@@ -3,6 +3,11 @@
     margin: 0;
 }
 
+body{
+    background-color: #28282B;
+    color:#d4d4bd;
+}
+
 @keyframes changeBg
 {
    0%   {background-image: url("./img/chef.jpeg");}
@@ -19,11 +24,30 @@
     animation:changeBg 30s ease infinite;
 }
 
-.texte_color{
+.citation{
     color:#D6D4A0;
-    font-family: 'Cormorant Garamond', serif;
     padding: 2em;
     background-color: black;
+    opacity: 0.5;
+}
+
+.text_cormorant{
+    font-family: 'Cormorant Garamond', serif;
+}
+
+.text_source{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.text_black{
+    color: #28282B ;
+}
+
+.padding{
+    padding-top: 5em;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-bottom: 5em;
 }
 
 
@@ -33,6 +57,18 @@
 
 .navbar-custom {
     background-color: #654236;
+}
+
+article>h1{
+    padding-bottom: 0.8em;
+}
+
+.background_light{
+    background-color: #d4d4bd;
+}
+
+.background_medium{
+    background-color:#654236;
 }
 
 @media( min-width: 990px){

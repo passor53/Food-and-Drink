@@ -8,12 +8,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
     <title>Food & Drink</title>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-custom">
-        <div class="container-fluid">
+        <div class="container-fluid text text_black">
             <a class="navbar-brand" href="#">
                 <img class="icone" src="./food-and-drink.svg" alt="logo_food-and-drink">
                 Food and drink 
@@ -22,25 +25,33 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <ul class="navbar-nav">
-                    <li class="nav-link" ><a aria-current="page" href="#menus"> Menu</a></li>
-                    <li class="nav-link" ><a aria-current="page" href="#a_propos">À propos de nous</a></li>
-                    <li class="nav-link" ><a aria-current="page" href="#coordonnees">Coordonnées</a></li>
-                    <li class="nav-link" ><a aria-current="page" href="#contact">Nous contacter</a></li>
+                <ul class="navbar-nav text">
+                    <li class="nav-link" >
+                        <a aria-current="page" href="#menus"> Menu</a>
+                    </li>
+                    <li class="nav-link" >
+                        <a aria-current="page" href="#a_propos">À propos de nous</a>
+                    </li>
+                    <li class="nav-link" >
+                        <a aria-current="page" href="#coordonnees">Coordonnées</a>
+                    </li>
+                    <li class="nav-link" >
+                        <a aria-current="page" href="#contact">Nous contacter</a>
+                    </li>
                 </ul>
             </div>
         </div>
     </nav>
     
     <section class="background_img d-flex flex-column justify-content-center text-center ">
-        <article class="texte_color">
-            <p>“Les connaissances gastronomiques sont nécessaires à tous les hommes puisqu’elles tendent à augmenter la somme des plaisirs qui leurs est destinée.”</p>
-            <p>Anthelme Brillat-Savarin</p>
+        <article class="citation">
+            <p class="text_cormorant">“Les connaissances gastronomiques sont nécessaires à tous les hommes puisqu’elles tendent à augmenter la somme des plaisirs qui leurs est destinée.”</p>
+            <p class="text_source">Anthelme Brillat-Savarin</p>
         </article>
     </section>
 
-    <section id="menus">
-        <article>
+    <section id="menus" class="d-flex flex-column text-center padding text">
+        <article >
             <h1>Menu : 54 €</h1>
             <div>
                 <h2>Entrées</h2>
@@ -57,7 +68,11 @@
                 <p>Rhubarbe pochée, fraise poêlée au poivre long, sorbet fruits rouges</p>
                 <p>ou</p>
                 <p>Croquant chocolat, cerise confite, glace amaréna</p>
+
             </div>
+        </article>
+        <article class="padding">
+            <div>_____________</div>
         </article>
         <article>
             <h1>Menu : 71€</h1>
@@ -72,6 +87,7 @@
                 <p>Sur l'idée d'un rougail...filets de rouget barbet, Morteau, oignons tomates</p>
                 <h2>Fromages</h2>
                 <p>Déclinaison de fromages de la Maison Fosset</p>
+                <p>ou</p>
                 <p>Burrata, échalotes, herbes et croûtons</p>
                 <h2>Desserts</h2>
                 <p>Fraises Gariguette, mousse vanille, coulis, palet breton, glacé crème D'Isigny</p>
@@ -106,14 +122,14 @@
         </article>
     </section>
     
-    <section id="coordonnees">
+    <section id="coordonnees" class="d-flex flex-column-reverse text-center padding background_light text text_black">
         <article>
-            <p>Adresse</p>
-            <p>tel</p>
-            <p>mail</p>
+            <p>Adresse : 15 rue de la Paix 75002 Paris</p>
+            <p>Téléphone: 02.12.34.56.78</p>
+            <p>Mail: contact@foodanddrink.fr</p>
         </article>
-        <article>
-            <p>map</p>
+        <article class="padding">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.4040779563497!2d2.3312209999999998!3d48.869572999999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e3103826f8f%3A0x38e152665e4f1b21!2s15%20Rue%20de%20la%20Paix%2C%2075002%20Paris!5e0!3m2!1sfr!2sfr!4v1656670297189!5m2!1sfr!2sfr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </article>
     </section>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -125,7 +141,7 @@
   interval: 2000
 })
 </script>
-    <footer id="contact">
+    <footer class="text" id="contact">
         <h5>Mentions Légales</h5>
         <p>Ébergeur: github.com</p>
         <p>Adresse: https://github.com/passor53/Food-and-Drink</p>
