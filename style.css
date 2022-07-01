@@ -4,9 +4,33 @@
 }
 
 body{
+    width: 100vw;
     background-color: #28282B;
     color:#d4d4bd;
 }
+
+/* navbar */
+
+.navbar-custom {
+    background-color: #654236;
+}
+
+.navbar{
+    min-height: 10vh;
+}
+
+.link{
+    text-decoration: none;
+    color: black;
+ }
+
+ 
+ .navbar-custom :hover{
+     color: #D6D4A0;
+ }
+
+
+/* background img citation */
 
 @keyframes changeBg
 {
@@ -31,41 +55,77 @@ body{
     opacity: 0.5;
 }
 
-.text_cormorant{
-    font-family: 'Cormorant Garamond', serif;
+/* text / background*/
+.uppercase{
+    text-transform: uppercase;
+}
+
+.text_size_petit{
+    font-size: 0.6em;
+}
+
+.text_size{
+    font-size: 0.8em;
+}
+
+.text_size_medium{
+    font-size: 1.5em;
 }
 
 .text_source{
     font-family: 'Source Sans Pro', sans-serif;
 }
 
+.text_cormorant{
+    font-family: 'Cormorant Garamond', serif;
+}
+
 .text_black{
     color: #28282B ;
 }
 
-.padding{
+.background_light{
+    background-color: #d4d4bd;
+}
+
+.background_medium{
+    background-color:#654236;
+}
+
+
+/* padding */
+
+.padding_section{
     padding-top: 5em;
     padding-left: 2em;
     padding-right: 2em;
     padding-bottom: 5em;
 }
 
-
-.icone{
-    width: 8vw;
+.padding_texte{
+    padding-top: 2em ;
+    padding-bottom: 2em ;
 }
 
-.link{
-   text-decoration: none;
-   color: black;
+article>h1{
+    padding-bottom: 0.8em;
 }
 
-.navbar-custom {
-    background-color: #654236;
+.margin_none{
+    margin: 0;
 }
 
-.navbar-custom :hover{
-    color: #D6D4A0;
+.padding_none{
+    padding: 0;
+}
+
+
+/* img */ 
+
+.logo{
+    position: absolute;
+    top:0;
+    left:0;
 }
 
     /* Carousel*/
@@ -114,17 +174,41 @@ article>h1{
     padding-bottom: 0.8em;
 }
 
-.background_light{
-    background-color: #d4d4bd;
+.icone{
+    width: 3.5em;
 }
 
-.background_medium{
-    background-color:#654236;
+/* footer */
+
+footer{
+    height: 15vh;
 }
+
+
+@media (min-width: 768px){
+
+    .text_size_petit{
+        font-size: 0.8em;
+    }
     
-@media( min-width: 990px){
+}
+
+@media(min-width: 1024px){
 
     .navbar-collapse{
         flex-grow: 0;
     }
+
+    .text_size_petit{
+        font-size: 0.8em;
+    }
+
+    .text_size{
+        font-size: 1.1em;
+    }
+    
+    .text_size_medium{
+        font-size: 1.8em;
+    }
+
 }
