@@ -84,7 +84,18 @@ body{
 }
 
     /*Fin carousel*/
+article>h1{
+    padding-bottom: 0.8em;
+}
 
+.background_light{
+    background-color: #d4d4bd;
+}
+
+.background_medium{
+    background-color:#654236;
+}
+    
 @media( min-width: 990px){
 
     .navbar-collapse{
