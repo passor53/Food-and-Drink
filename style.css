@@ -33,12 +33,33 @@
 
 .link{
    text-decoration: none;
-   color: #D6D4A0;
+   color: black;
 }
 
 .navbar-custom {
     background-color: #654236;
 }
+
+.navbar-custom :hover{
+    color: #D6D4A0;
+}
+
+    /* Carousel*/
+
+.carousel{
+    width: 70vw;
+    margin: auto;
+}
+
+.carousel_images{
+    width: 70vw;
+}
+
+.sr-only{
+    color: #D6D4A0;
+}
+
+    /*Fin carousel*/
 
 @media( min-width: 990px){
 
