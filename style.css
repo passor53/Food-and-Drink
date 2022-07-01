@@ -70,6 +70,10 @@ body{
 
     /* Carousel*/
 
+.bloc_carousel{
+    background-color: #654236;
+}
+
 .carousel{
     width: 70vw;
     margin: auto;
@@ -77,6 +81,20 @@ body{
 
 .carousel_images{
     width: 70vw;
+    padding-top: 5vh;
+}
+
+.color-hypertext{
+    text-decoration: none;
+    color: rgb(0, 0, 0)
+}
+
+.color-hypertext :hover{
+    color: #D6D4A0;
+}
+
+.centrer-textes-carousel{
+    text-align: center;
 }
 
 .sr-only{
@@ -84,6 +102,14 @@ body{
 }
 
     /*Fin carousel*/
+     /*Referents*/
+
+.link2{
+    text-decoration: none; 
+    color: #D6D4A0;
+}
+
+
 article>h1{
     padding-bottom: 0.8em;
 }
