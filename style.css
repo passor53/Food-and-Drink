@@ -7,6 +7,11 @@
     width: 8vw;
 }
 
+.link{
+   text-decoration: none;
+   color: #D6D4A0;
+}
+
 @media( min-width: 990px){
 
     .navbar-collapse{
