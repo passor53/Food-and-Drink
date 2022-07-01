@@ -3,8 +3,36 @@
     margin: 0;
 }
 
+@keyframes changeBg
+{
+   0%   {background-image: url("./img/chef.jpeg");}
+   25%  {background-image: url("./img/plat.jpeg");}
+   50%  {background-image: url("./img/table.jpeg");}
+   100% {background-image: url("./img/cuisine.jpeg");}
+}
+
+
+.background_img{
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    animation:changeBg 30s ease infinite;
+}
+
+.texte_color{
+    color:#D6D4A0;
+    font-family: 'Cormorant Garamond', serif;
+    padding: 2em;
+    background-color: black;
+}
+
+
 .icone{
     width: 8vw;
+}
+
+.navbar-custom {
+    background-color: #654236;
 }
 
 @media( min-width: 990px){
