@@ -19,6 +19,16 @@ body{
     min-height: 10vh;
 }
 
+.link{
+    text-decoration: none;
+    color: black;
+ }
+
+ 
+ .navbar-custom :hover{
+     color: #D6D4A0;
+ }
+
 
 /* background img citation */
 
@@ -46,20 +56,28 @@ body{
 }
 
 /* text / background*/
-
-.text_cormorant{
-    font-family: 'Cormorant Garamond', serif;
+.uppercase{
+    text-transform: uppercase;
 }
 
 .text_size_petit{
     font-size: 0.6em;
 }
+
+.text_size{
+    font-size: 0.8em;
+}
+
 .text_size_medium{
-    font-size: 1em;
+    font-size: 1.5em;
 }
 
 .text_source{
     font-family: 'Source Sans Pro', sans-serif;
+}
+
+.text_cormorant{
+    font-family: 'Cormorant Garamond', serif;
 }
 
 .text_black{
@@ -74,13 +92,19 @@ body{
     background-color:#654236;
 }
 
+
 /* padding */
 
-.padding{
+.padding_section{
     padding-top: 5em;
     padding-left: 2em;
     padding-right: 2em;
     padding-bottom: 5em;
+}
+
+.padding_texte{
+    padding-top: 2em ;
+    padding-bottom: 2em ;
 }
 
 article>h1{
@@ -94,6 +118,8 @@ article>h1{
 .padding_none{
     padding: 0;
 }
+
+
 /* img */ 
 
 .logo{
@@ -102,24 +128,61 @@ article>h1{
     left:0;
 }
 
+    /* Carousel*/
+
+.carousel{
+    width: 70vw;
+    margin: auto;
+}
+
+.carousel_images{
+    width: 70vw;
+}
+
+.sr-only{
+    color: #D6D4A0;
+}
+
+    /*Fin carousel*/
+article>h1{
+    padding-bottom: 0.8em;
+}
+
 .icone{
     width: 3.5em;
 }
 
+/* footer */
+
+footer{
+    height: 15vh;
+}
 
 
 @media (min-width: 768px){
 
+    .text_size_petit{
+        font-size: 0.8em;
+    }
+    
 }
 
-@media(min-width: 1280px){
+@media(min-width: 1024px){
 
     .navbar-collapse{
         flex-grow: 0;
     }
 
+    .text_size_petit{
+        font-size: 0.8em;
+    }
+
     .text_size{
-        font-size: 1.5em;
+        font-size: 1.1em;
+    }
+    
+    .text_size_medium{
+        font-size: 1.8em;
     }
 
 }
