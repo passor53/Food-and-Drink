@@ -64,7 +64,6 @@ body{
     background-color: #654236;
 }
 
-<<<<<<< HEAD
 .navbar-custom :hover{
     color: #D6D4A0;
 }
@@ -86,20 +85,6 @@ body{
 
     /*Fin carousel*/
 
-=======
-article>h1{
-    padding-bottom: 0.8em;
-}
-
-.background_light{
-    background-color: #d4d4bd;
-}
-
-.background_medium{
-    background-color:#654236;
-}
-
->>>>>>> f77237fd3d013c04dfde1375b184fc572b80c5db
 @media( min-width: 990px){
 
     .navbar-collapse{
