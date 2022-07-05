@@ -12,49 +12,50 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
+    <link rel="icone" href="./food-and-drink.svg">
+    <link rel="icon" type="image/svg" href="./food-and-drink.svg" />
     <title>Food & Drink</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-custom padding_none">
-        <div class="container-fluid text text_black ">
-            <a class="navbar-brand d-flex align-items-center" href="#">
-                <img class="icone" src="./food-and-drink.svg" alt="logo_food-and-drink ">
-                <p class="uppercase margin_none text_size ">Food and drink</p> 
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
 
-                <ul class="navbar-nav text_size uppercase">
-                    <li class="nav-link" >
-                        <a class="link" aria-current="page" href="#menus"> Menu</a>
-                    </li>
-                    <li class="nav-link" >
-                        <a class="link" aria-current="page" href="#a_propos">À propos de nous</a>
-                    </li>
-                    <li class="nav-link" >
-                        <a class="link" aria-current="page" href="#coordonnees">Coordonnées</a>
-                    </li>
-                    <li class="nav-link" >
-                        <a class="link" aria-current="page" href="#contact">Nous contacter</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+    <section id="first" class="background_first d-flex flex-column justify-content-center text-center ">
+        <nav class="navbar navbar-expand-lg navbar-custom padding_none">
+            <div class="container-fluid text text_black ">
+                <a class="navbar-brand d-flex align-items-center" href="#">
+                    <img class="icone" src="./img/food-and-drink.svg" alt="logo_food-and-drink ">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
     
-    <section class="background_img d-flex flex-column justify-content-center text-center ">
-        <article class="citation">
+                    <ul class="navbar-nav text_size text_cormorant uppercase">
+                        <li class="nav-link" >
+                            <a class="link" aria-current="page" href="#menus"> Menu.</a>
+                        </li>
+                        <li class="nav-link" >
+                            <a class="link" aria-current="page" href="#a_propos">nos producteurs.</a>
+                        </li>
+                        <li class="nav-link" >
+                            <a class="link" aria-current="page" href="#reservation">Réserver.</a>
+                        </li>
+                        <li class="nav-link" >
+                            <a class="link" aria-current="page" href="#coordonnees">Coordonnées.</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <article class="citation d-flex flex-column justify-content-center">
             <p class="text_cormorant text_size_medium">“Les connaissances gastronomiques sont nécessaires à tous les hommes puisqu’elles tendent à augmenter la somme des plaisirs qui leurs est destinée.”</p>
             <p class="text_source">Anthelme Brillat-Savarin</p>
         </article>
     </section>
 
-    <section id="menus" class="d-flex flex-column text-center padding_section text text_size">
+    <section id="menus" class="d-flex flex-column text-center  padding_section text text_size">
         <article >
-            <h1>Menu : 54 €</h1>
-            <div>
+            <h1 class="text_source">Menu : 54 €</h1>
+            <div class="text_cormorant">
                 <h2>Entrées</h2>
                 <p>Pressé de volaille à l'estragon, Foie Gras, crémeux de fromage blanc aux aromates </p>
                 <p>ou</p>
@@ -76,8 +77,8 @@
             <div>_____________</div>
         </article>
         <article>
-            <h1>Menu : 71€</h1>
-            <div>
+            <h1 class="text_source">Menu : 71€</h1>
+            <div class="text_cormorant">
                 <h2>Entrées</h2>
                 <p>Foie gras au jambon Serrano, gelée Porto, sorbet melon</p>
                 <p>ou</p>
@@ -138,6 +139,35 @@
                 <img class="logo-ref" src="img/TripAdvisor.svg.svg" alt="Logo de TripAdvisor">
         </article>
     </section>
+
+    <section id="reservation" class=" background_second d-flex justify-content-end text-center text_size">
+        <article class="reservation">
+            <form action="post" class="padding_section">
+                <div class="mb-3">
+                    <label for="validationServer01">Prénom</label>
+                    <input type="text" class="form-control white_color" id="validationServer01" placeholder="First name" required>
+                </div>
+                <div class="mb-3">
+                    <label for="validationServer02">Nom</label>
+                    <input type="text" class="form-control " id="validationServer02" placeholder="Last name" required>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Téléphone</label>
+                    <input type="tel" class="form-control" id="exampleFormControlInput1" placeholder="0612345678">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label"> Nombre de couvert</label>
+                    <input type="number" class="form-control" id="exampleFormControlInput1" >
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label"></label>
+                    <input type="datetime-local" class="form-control" id="exampleFormControlInput1" placeholder="0612345678">
+                </div>
+                <button type="submit" class="btn btn-primary mb-2 brown_color background_medium">Réserver</button>
+    
+            </form>
+        </article>
+    </section>
     
     <section id="coordonnees" class="d-flex flex-column-reverse text-center padding_texte background_light text text_black d-lg-flex align-items-lg-center flex-lg-row-reverse justify-content-lg-around">
         <article>
@@ -146,28 +176,22 @@
             <p>Mail: contact@foodanddrink.fr</p>
         </article>
         <article class="padding_texte d-flex justify-content-center">
-            <iframe class="d-none d-md-block" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.4040779563497!2d2.3312209999999998!3d48.869572999999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e3103826f8f%3A0x38e152665e4f1b21!2s15%20Rue%20de%20la%20Paix%2C%2075002%20Paris!5e0!3m2!1sfr!2sfr!4v1656683497768!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.4040779563497!2d2.3312209999999998!3d48.869572999999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e3103826f8f%3A0x38e152665e4f1b21!2s15%20Rue%20de%20la%20Paix%2C%2075002%20Paris!5e0!3m2!1sfr!2sfr!4v1656683497768!5m2!1sfr!2sfr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </article>
 
     </section>
 
-    <footer class="d-flex flex-column justify-content-around" id="contact">
-        <h5 class="margin_none">Mentions Légales</h5>
-        <div class="">
+    <footer class="d-flex flex-column justify-content-around padding_texte" >
+            <p class="margin_none text_size_petit">© 2022 Food and Drink restaurant ・ L'abus d'alcool est dangereux pour la santé , consommer avec modération ・ Mentions légales ・ Politique de confidentialité ・ Politique de cookies ・ CGV</p>
             <p class="margin_none text_size_petit">Hébergeur: github.com</p>
             <p class="margin_none text_size_petit">Adresse: https://github.com/passor53/Food-and-Drink</p>
             <p class="margin_none text_size_petit">Mail: eugessor.foodanddrink@gmail.com</p>    
-        </div>
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-    <script>
-        $('.carousel').carousel({
-      interval: 2000
-    })
-    </script>
+    <script src="./script.js"></script>
 </body>
 </html>
