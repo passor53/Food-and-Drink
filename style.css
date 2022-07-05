@@ -12,11 +12,13 @@ body{
 /* navbar */
 
 .navbar-custom {
-    background-color: #654236;
+    background-color:#F9F6EE;
 }
 
 .navbar{
     min-height: 10vh;
+    top: 0;
+    width: 100vw;
 }
 
 .link{
@@ -32,20 +34,34 @@ body{
 
 /* background img citation */
 
-@keyframes changeBg
+@keyframes firstBg
 {
    0%   {background-image: url("./img/chef.jpeg");}
    25%  {background-image: url("./img/plat.jpeg");}
-   50%  {background-image: url("./img/table.jpeg");}
+   50%  {background-image: url("./img/chef_cuisine.jpeg");}
    100% {background-image: url("./img/cuisine.jpeg");}
 }
 
+@keyframes secondBg {
+    0% {background-image: url("./img/table.jpeg");}
+    100% {background-image: url("./img/bar.jpeg");}
+}
 
-.background_img{
+
+.background_first{
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
     height: 100vh;
-    animation:changeBg 30s ease infinite;
+    animation: firstBg 30s ease infinite;
+}
+
+.background_second{
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+    animation:secondBg 10s ease infinite;
 }
 
 .citation{
@@ -53,11 +69,13 @@ body{
     padding: 2em;
     background-color: black;
     opacity: 0.5;
+    width: 100vw;
+    height: 100vh;
 }
 
 /* text / background*/
 .uppercase{
-    text-transform: uppercase;
+    text-transform:lowercase;
 }
 
 .text_size_petit{
@@ -65,7 +83,7 @@ body{
 }
 
 .text_size{
-    font-size: 0.8em;
+    font-size: 1.2em;
 }
 
 .text_size_medium{
@@ -85,7 +103,7 @@ body{
 }
 
 .background_light{
-    background-color: #d4d4bd;
+    background-color: #FAF9F6;
 }
 
 .background_medium{
@@ -163,6 +181,14 @@ footer{
 
     .text_size_petit{
         font-size: 0.8em;
+    }
+
+    .citation{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 40vw;
+        height: 100vh;
     }
     
 }
