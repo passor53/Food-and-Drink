@@ -140,16 +140,32 @@
         </article>
     </section>
 
-    <section id="reservation" class=" background_second d-flex flex-column text-center  padding_section text text_size">
-        <article>
-            <div class="mb-3">
-                <label for="exampleFormControlInput1" class="form-label">Email address</label>
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-              </div>
-              <div class="mb-3">
-                <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-              </div>
+    <section id="reservation" class=" background_second d-flex justify-content-end text-center text_size">
+        <article class="reservation">
+            <form action="post" class="padding_section">
+                <div class="mb-3">
+                    <label for="validationServer01">Prénom</label>
+                    <input type="text" class="form-control white_color" id="validationServer01" placeholder="First name" required>
+                </div>
+                <div class="mb-3">
+                    <label for="validationServer02">Nom</label>
+                    <input type="text" class="form-control " id="validationServer02" placeholder="Last name" required>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Téléphone</label>
+                    <input type="tel" class="form-control" id="exampleFormControlInput1" placeholder="0612345678">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label"> Nombre de couvert</label>
+                    <input type="number" class="form-control" id="exampleFormControlInput1" >
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label"></label>
+                    <input type="datetime-local" class="form-control" id="exampleFormControlInput1" placeholder="0612345678">
+                </div>
+                <button type="submit" class="btn btn-primary mb-2 brown_color background_medium">Réserver</button>
+    
+            </form>
         </article>
     </section>
     
