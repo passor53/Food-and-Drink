@@ -205,11 +205,11 @@ article>h1{
     /*Fin carousel*/
      /*Referents*/
 
-.link2{
-    text-decoration: none; 
-    color: #D6D4A0;
+.logo-ref{
+    width: 20vw;
 }
 
+    /*Fin Referents*/
 
 article>h1{
     padding-bottom: 0.8em;
