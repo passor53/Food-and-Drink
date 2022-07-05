@@ -19,6 +19,7 @@ body{
     min-height: 10vh;
     top: 0;
     width: 100vw;
+    z-index: 1;
 }
 
 .link{
@@ -36,15 +37,15 @@ body{
 
 @keyframes firstBg
 {
-   0%   {background-image: url("./img/chef.jpeg");}
-   25%  {background-image: url("./img/plat.jpeg");}
-   50%  {background-image: url("./img/chef_cuisine.jpeg");}
-   100% {background-image: url("./img/cuisine.jpeg");}
+   0%   {background-image: url("../img/chef.jpeg");}
+   25%  {background-image: url("../img/plat.jpeg");}
+   50%  {background-image: url("../img/chef_cuisine.jpeg");}
+   100% {background-image: url("../img/cuisine.jpeg");}
 }
 
 @keyframes secondBg {
-    0% {background-image: url("./img/table.jpeg");}
-    100% {background-image: url("./img/bar.jpeg");}
+    0% {background-image: url("../img/table.jpeg");}
+    100% {background-image: url("../img/bar.jpeg");}
 }
 
 
@@ -88,15 +89,19 @@ body{
 }
 
 .text_size_medium{
-    font-size: 1.5em;
+    font-size: 1.3em;
 }
 
-.text_source{
-    font-family: 'Source Sans Pro', sans-serif;
+.text_raleway{
+    font-family: 'Raleway', sans-serif;
 }
 
-.text_cormorant{
-    font-family: 'Cormorant Garamond', serif;
+.text_merriweather{
+    font-family: 'Merriweather', serif;
+}
+
+.text_cinzel{
+    font-family: 'Cinzel', serif;
 }
 
 .text_black{
@@ -133,6 +138,14 @@ body{
 .padding_texte{
     padding-top: 2em ;
     padding-bottom: 2em ;
+}
+
+.padding_form{
+    padding: 3em;
+}
+
+.padding_button{
+    padding: 2em;
 }
 
 article>h1{
@@ -238,6 +251,10 @@ footer{
     .reservation{
         width: 60vw;
     }
+
+    .padding_form{
+        padding: 5em;
+    }
     
 }
 
@@ -256,7 +273,7 @@ footer{
     }
     
     .text_size_medium{
-        font-size: 1.8em;
+        font-size: 1.4em;
     }
 
     .citation{
@@ -267,5 +284,14 @@ footer{
         width: 40vw;
     }
 
+    .padding_form{
+        padding-top: 6em;
+        padding-left: 6em;
+        padding-right: 6em;
+    }
+
+    .padding_bottom{
+        padding-bottom: 1.5em;
+    }
 
 }

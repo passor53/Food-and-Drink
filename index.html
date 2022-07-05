@@ -7,65 +7,71 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
     <link rel="icone" href="./food-and-drink.svg">
     <link rel="icon" type="image/svg" href="./food-and-drink.svg" />
     <title>Food & Drink</title>
 </head>
 <body>
+    <nav class="navbar navbar-expand-lg navbar-custom padding_none position-absolute">
+        <div class="container-fluid text text_black ">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img class="icone" src="./img/food-and-drink.svg" alt="logo_food-and-drink ">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+
+                <ul class="navbar-nav text_size text_raleway uppercase">
+                    <li class="nav-link" >
+                        <a class="link" aria-current="page" href="#menus"> Menu.</a>
+                    </li>
+                    <li class="nav-link" >
+                        <a class="link" aria-current="page" href="#a_propos">nos producteurs.</a>
+                    </li>
+                    <li class="nav-link" >
+                        <a class="link" aria-current="page" href="#reservation">Réserver.</a>
+                    </li>
+                    <li class="nav-link" >
+                        <a class="link" aria-current="page" href="#coordonnees">Coordonnées.</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
     <section id="first" class="background_first d-flex flex-column justify-content-center text-center ">
-        <nav class="navbar navbar-expand-lg navbar-custom padding_none">
-            <div class="container-fluid text text_black ">
-                <a class="navbar-brand d-flex align-items-center" href="#">
-                    <img class="icone" src="./img/food-and-drink.svg" alt="logo_food-and-drink ">
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-    
-                    <ul class="navbar-nav text_size text_cormorant uppercase">
-                        <li class="nav-link" >
-                            <a class="link" aria-current="page" href="#menus"> Menu.</a>
-                        </li>
-                        <li class="nav-link" >
-                            <a class="link" aria-current="page" href="#a_propos">nos producteurs.</a>
-                        </li>
-                        <li class="nav-link" >
-                            <a class="link" aria-current="page" href="#reservation">Réserver.</a>
-                        </li>
-                        <li class="nav-link" >
-                            <a class="link" aria-current="page" href="#coordonnees">Coordonnées.</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
         <article class="citation d-flex flex-column justify-content-center">
-            <p class="text_cormorant text_size_medium">“Les connaissances gastronomiques sont nécessaires à tous les hommes puisqu’elles tendent à augmenter la somme des plaisirs qui leurs est destinée.”</p>
-            <p class="text_source">Anthelme Brillat-Savarin</p>
+            <p class="text_raleway text_size_medium">“Les connaissances gastronomiques sont nécessaires à tous les hommes puisqu’elles tendent à augmenter la somme des plaisirs qui leurs est destinée.”</p>
+            <p class="text_cinzel">Anthelme Brillat-Savarin</p>
         </article>
     </section>
 
     <section id="menus" class="d-flex flex-column text-center  padding_section text text_size">
         <article >
-            <h1 class="text_source">Menu : 54 €</h1>
-            <div class="text_cormorant">
+            <h1 class="text_cinzel">Menu : 54 €</h1>
+            <div class="text_raleway">
                 <h2>Entrées</h2>
                 <p>Pressé de volaille à l'estragon, Foie Gras, crémeux de fromage blanc aux aromates </p>
                 <p>ou</p>
                 <p>Langoustines dorées, fondue de chou rave et mélisse, vinaigrette de carcasse </p>
+                <br>
                 <h2>Plats</h2>
                 <p>Lotte nature, légèreté de moule, courgette, salicorne et groseille</p>
                 <p>ou</p>
                 <p>Pièce de Boeuf, jus tranché, jeune betterave, échalote nouvelle</p>
+                <br>
                 <h2>Fromages</h2>
                 <p>Chariot de Fromages Affinés</p>
+                <br>
                 <h2>Desserts</h2>
                 <p>Rhubarbe pochée, fraise poêlée au poivre long, sorbet fruits rouges</p>
                 <p>ou</p>
@@ -77,20 +83,23 @@
             <div>_____________</div>
         </article>
         <article>
-            <h1 class="text_source">Menu : 71€</h1>
-            <div class="text_cormorant">
+            <h1 class="text_cinzel">Menu : 71€</h1>
+            <div class="text_raleway">
                 <h2>Entrées</h2>
                 <p>Foie gras au jambon Serrano, gelée Porto, sorbet melon</p>
                 <p>ou</p>
                 <p>Rouleaude printemps thon quinoa, tartare d'algues, framboises wasabi</p>
+                <br>
                 <h2>Plats</h2>
                 <p>Echine de cochon farcie estragon cuite à basse température, légumes au raz el hanout et foie gras</p>
                 <p>ou</p>
                 <p>Sur l'idée d'un rougail...filets de rouget barbet, Morteau, oignons tomates</p>
+                <br>
                 <h2>Fromages</h2>
                 <p>Déclinaison de fromages de la Maison Fosset</p>
                 <p>ou</p>
                 <p>Burrata, échalotes, herbes et croûtons</p>
+                <br>
                 <h2>Desserts</h2>
                 <p>Fraises Gariguette, mousse vanille, coulis, palet breton, glacé crème D'Isigny</p>
                 <p>ou</p>
@@ -142,7 +151,7 @@
 
     <section id="reservation" class=" background_second d-flex justify-content-end text-center text_size">
         <article class="reservation">
-            <form action="post" class="padding_section">
+            <form action="post" class="padding_form d-flex flex-column justify-content-between text_cinzel">
                 <div class="mb-3">
                     <label for="validationServer01">Prénom</label>
                     <input type="text" class="form-control white_color" id="validationServer01" placeholder="First name" required>
@@ -163,17 +172,16 @@
                     <label for="exampleFormControlTextarea1" class="form-label"></label>
                     <input type="datetime-local" class="form-control" id="exampleFormControlInput1" placeholder="0612345678">
                 </div>
-                <button type="submit" class="btn btn-primary mb-2 brown_color background_medium">Réserver</button>
-    
+                <button type="submit" class="btn btn-primary mb-2 brown_color background_medium ">Réserver</button>
             </form>
         </article>
     </section>
     
-    <section id="coordonnees" class="d-flex flex-column-reverse text-center padding_texte background_light text text_black d-lg-flex align-items-lg-center flex-lg-row-reverse justify-content-lg-around">
-        <article>
+    <section id="coordonnees" class=" text_raleway d-flex flex-column-reverse text-center padding_texte background_light text text_black d-lg-flex align-items-lg-center flex-lg-row-reverse justify-content-lg-around">
+        <article class="d-md-flex justify-content-md-around flex-lg-column ">
             <p>Adresse : 15 rue de la Paix 75002 Paris</p>
-            <p>Téléphone: 02.12.34.56.78</p>
-            <p>Mail: contact@foodanddrink.fr</p>
+            <a class="text_black padding_bottom" href="tel:+336123456789">02.12.34.56.78</a>
+            <a class="text_black padding_bottom" href="mailto: contact@foodanddrink.fr">contact@foodanddrink.fr</a>
         </article>
         <article class="padding_texte d-flex justify-content-center">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.4040779563497!2d2.3312209999999998!3d48.869572999999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e3103826f8f%3A0x38e152665e4f1b21!2s15%20Rue%20de%20la%20Paix%2C%2075002%20Paris!5e0!3m2!1sfr!2sfr!4v1656683497768!5m2!1sfr!2sfr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
